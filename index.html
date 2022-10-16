@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Javascript on Steriods</title>
+</head>
+<body>
+
+    <div class="container-1">
+        <h2></h2>
+        <div class="flex-box-container-1">
+            <div>
+              <button class="btn btn-primary" onclick="ageindays()">Click Me</button>
+            </div>
+
+            <div>
+              <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+           </div>
+  
+           <div class="flex-box-container-1">
+              <div id="flex-box-result"></div>
+              <h2></h2>
+           </div>
+    
+    </div>
+
+    
+    
+    <div class="container-2">
+      <h2>Cat Generator</h2>
+      <div class="flex-box-container-2">
+        <div>
+          <button class="btn btn-success" id="cat-generator" onclick="cat()">Generate Cat</button>
+        </div>
+        <div>
+          <button class="btn btn-danger" onclick="reset2()">Reset</button>
+        </div>
+        
+        <div class="flex-box-container-2" id="flex-Cat-gen">
+        </div>
+      </div>      
+
+    </div>
+
+
+
+    
+    <div class="container-3">
+      <h2>Stone Paper Scissors</h2>
+      <div class="flex-box-rps" id="flex-box-rps-div">
+        <img id="rock" src="static/img/Rock.png" height="150" width="150" alt="" onclick="rpsgame(this)">
+        <img id="paper" src="static/img/Paper.jpg" height="150" width="150" alt="" onclick="rpsgame(this)">
+        <img id="scissor" src="static/img/Scissors.png" height="150" width="150" alt="" onclick="rpsgame(this)">
+        
+      </div>
+    </div>
+
+
+
+    <div class="container-4">
+      <h2>Change the color of the buttons</h2>
+      <div class="flex-box-pick-color">
+        <form action="">
+          <select name="bacakdrop" id="background" onchange="buttoncolorchange(this)">
+            <option value="Random">Random</option>
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Reset">Reset</option>
+          </select>
+        </form>
+
+        <button class="btn btn-primary">Wee!</button>
+        <button class="btn btn-danger">Yahoo!</button>
+        <button class="btn btn-warning">Google</button>
+        <button class="btn btn-success">Facebook</button>
+      </div>
+    </div>
+
+
+
+
+    <div class="container-5">
+      <h2>Blackjack</h2>
+      <h3><span id="blackjack-result">Press Hit to Play</span></h3>
+      <div class="flex-blackjack-row-1">
+        <div id="your-box">
+          <h2>You: <span id="your-blackjack-result">0</span></h2>
+        </div>
+        <div id="dealer-box">
+          <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+        </div>
+      </div>
+      <div class="flex-blackjack-row-2">
+          <div>
+            <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+            <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+            <button class="btn-lg btn-danger mr-2" id="blackjack-deal-button">Deal</button>
+          </div>
+      </div>
+      <div class="flex-blackjack-row-3">
+          <table style="border: 1px solid black">
+            <tr>
+              <th>Wins</th>
+              <th>Losses</th>
+              <th>Draws</th>
+            </tr>
+            <tr>
+              <td><span id="wins">0</span></td>
+              <td><span id="losses">0</span></td>
+              <td><span id="draws">0</span></td>
+            </tr>
+          </table>
+      </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+    
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
